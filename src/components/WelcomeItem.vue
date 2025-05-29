@@ -1,12 +1,20 @@
+<!--
+  WelcomeItem.vue
+  This component is a reusable item for displaying a section with an icon, heading, and content.
+  It uses slots to allow flexible content injection.
+-->
 <template>
   <div class="item">
     <i>
+      <!-- Slot for the icon -->
       <slot name="icon"></slot>
     </i>
     <div class="details">
       <h3>
+        <!-- Slot for the heading -->
         <slot name="heading"></slot>
       </h3>
+      <!-- Default slot for the main content -->
       <slot></slot>
     </div>
   </div>
@@ -59,7 +67,7 @@ h3 {
   }
 
   .item:before {
-    content: ' ';
+    content: " ";
     border-left: 1px solid var(--color-border);
     position: absolute;
     left: 0;
@@ -68,7 +76,7 @@ h3 {
   }
 
   .item:after {
-    content: ' ';
+    content: " ";
     border-left: 1px solid var(--color-border);
     position: absolute;
     left: 0;

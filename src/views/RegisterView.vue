@@ -38,11 +38,19 @@
 
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
-import AuthLayout from '../layouts/AuthLayout.vue';
+import AuthLayout from "../layouts/AuthLayout.vue"; // Using AuthLayout for styling.
 
 const router = useRouter()
+
+/**
+ * Handles the registration process.
+ * Currently, it includes a placeholder comment and redirects to the home page.
+ * In a real application, this would involve API calls for user registration.
+ */
 function onRegister() {
-    // Aquí iría la lógica de registro
+  // "Aquí iría la lógica de registro" means "Registration logic would go here"
+  console.log("Register button clicked"); // Placeholder for actual registration logic
+  // Redirect to the home page after successful registration (or placeholder action)
     router.replace('/')
 }
 </script> 
